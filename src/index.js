@@ -29,7 +29,7 @@ app.post("/prateleira", (request, response) => {
     );
 
     if (livroExiste) {
-        return response.status(400).json({ error: "Costumer already exists!" });
+        return response.status(400).json({ error: "Livro existente!" });
     }
 
     livraria.push({ id, titulo, descricao, edicao, autor })
